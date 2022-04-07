@@ -37,6 +37,21 @@ let queries = {
             })
         })
         return response;
+    },
+
+    addSocketId: function(data){
+        let response = new Promise((resolve, reject) => {
+            userModel.updateOne({email: data.email}, {$set: {socketId: data.socket}}, (err,result) => {
+                if(err) throw err;
+                if(result){
+                    resolve(result);
+                }
+                else{
+                    reject(err);
+                }
+            })
+        })
+        return response;
     }
 }
 

@@ -11,6 +11,9 @@ module.exports = Object.freeze({
     MESSAGE_LIST_SUCCESS: 'List success.',
     MESSAGE_LIST_FAILED: 'Failed to get List!',
 
+    MESSAGE_UPDATE_SUCCESS: 'Details updated successfully.',
+    MESSAGE_UPDATE_FAILED: 'Failed to update details!',
+
     MESSAGE_INCORRECT_PASS: 'Incorrect Password !',
 
     MESSAGE_INVALID_REQUEST: 'Invalid Request.'

@@ -18,6 +18,10 @@ let userSchema = new Schema({
     phone: {
         type: Number,
         required: false
+    },
+    socketId: {
+        type: String,
+        required: false
     }
 })
 

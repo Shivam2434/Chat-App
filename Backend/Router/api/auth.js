@@ -4,5 +4,6 @@ let ValidatorMiddleware = require('../../Services/Middleware/validatorMiddleware
 
 router.post('/signup', ValidatorMiddleware, AuthController.signup);
 router.post('/login', ValidatorMiddleware, AuthController.login);
+router.post('/update/socket', AuthController.addSocketId);
 
 module.exports = router;

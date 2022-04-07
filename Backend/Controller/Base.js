@@ -29,6 +29,15 @@ class Base {
         })
         return result
     }
+
+    static addSocketId(data){
+        let result = AuthQueries.addSocketId(data).then(response => {
+            return response
+        }).catch(err => {
+            return err
+        })
+        return result;
+    }
 }
 
 module.exports = Base;
